@@ -38,7 +38,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
    font-family: 'Roboto', sans-serif;
--webkit-font-smoothing: antialiased;
+   -webkit-font-smoothing: antialiased;
 }
 .content {
     padding: 0 0.938rem;
@@ -62,10 +62,11 @@ ol, ul {
 	width: 60%;
 	height: 70px;
 	margin: 0 auto;
-	padding: 0;	
+	padding: 0 0.938rem;	
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+	min-width: 37.5rem;
 
 }
 .top-navigation .links {
@@ -114,17 +115,18 @@ ol, ul {
 .introduction .buttons {
     color: white;
     text-align: center;
+    margin-top: 1.563rem;
 }
 button {
     text-shadow: none;
     border-style: none;
     border-radius: 4px;
-    padding: 16px 26px;
 	background-color: #f15a29;
 	width: 9.688rem;
 	border-color: #f15a29;
 	color: white;
 	font-size: 1.125rem;
+	padding: 1rem 1.5rem;
 }
 .cases {
     background-color: #fff;
@@ -149,10 +151,52 @@ button {
 .cases .devices h3 {
     font-weight: 400;
     font-size: 1.563rem;
-    margin: 2.5rem 0px 1.875rem;
+    margin: 0;
 }
 .cases .devices {
     font-weight: 300;
     font-size: 1.313rem;
+    width: 60%;
+    margin: auto;
+    padding: 0
+    box-sizing: border-box;
+    vertical-align: baseline;
 }
-
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+}
+.social .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+.social .icons > li:hover {
+    cursor: pointer;
+}
+.social .twitter {
+    color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+    color: #3f729b;
+}
+.social .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
